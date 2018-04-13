@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mydoctor_development@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.7">
+    <root id="1"/>
+    <database id="2" parent="1" name="mydoctor_development">
+      <ObjectId>16625</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12403</ObjectId>
+    </database>
+    <database id="4" parent="1" name="raysango">
+      <ObjectId>16384</ObjectId>
+    </database>
+    <database id="5" parent="1" name="ray_appnew_development">
+      <ObjectId>16385</ObjectId>
+    </database>
+    <database id="6" parent="1" name="ray_appnew_test">
+      <ObjectId>16386</ObjectId>
+    </database>
+    <database id="7" parent="1" name="rayapp_development">
+      <ObjectId>16401</ObjectId>
+    </database>
+    <database id="8" parent="1" name="rayapp_test">
+      <ObjectId>16464</ObjectId>
+    </database>
+    <database id="9" parent="1" name="bootsytest_development">
+      <ObjectId>16565</ObjectId>
+    </database>
+    <database id="10" parent="1" name="bootsytest_test">
+      <ObjectId>16566</ObjectId>
+    </database>
+    <database id="11" parent="1" name="mydoctor_test">
+      <ObjectId>16626</ObjectId>
+    </database>
+    <role id="12" parent="1" name="raysango">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <schema id="13" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2018-04-12.19:50:50.251</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1786</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="14" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="15" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="16" parent="2" name="pg_temp_1">
+      <ObjectId>11320</ObjectId>
+    </schema>
+    <schema id="17" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11321</ObjectId>
+    </schema>
+    <schema id="18" parent="2" name="information_schema">
+      <ObjectId>11853</ObjectId>
+    </schema>
+    <table id="19" parent="13" name="schema_migrations">
+      <ObjectId>16627</ObjectId>
+      <StateNumber>1785</StateNumber>
+    </table>
+    <column id="20" parent="19" name="version">
+      <Position>1</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1785</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="21" parent="19" name="unique_schema_migrations">
+      <ObjectId>16633</ObjectId>
+      <ColNames>version</ColNames>
+      <Unique>1</Unique>
+    </index>
+  </database-model>
+</dataSource>
