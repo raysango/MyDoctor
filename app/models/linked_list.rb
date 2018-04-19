@@ -29,6 +29,14 @@ class LinkedList
     @size += 1
   end
 
+  def delete(index)
+    current = @head
+    (index - 1).times do
+      current = current.next_node
+    end
+    current.next_node = current.next_node.next_node
+  end
+
   def prepend(data)
     if @head.nil?
       @head = Node.new(data)
